@@ -1,0 +1,3 @@
+<app-header [title]="'Liste des <%= classify(name) %>s'"></app-header>
+<app-<%= dasherize(name) %>-list [<%= camelize(name) %>s]="<%= camelize(name) %>s | async"
+                 (<%= camelize(name) %>Selected)="goToDetail($event)"></app-<%= dasherize(name) %>-list>
