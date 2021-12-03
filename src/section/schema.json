@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "SectionSchematics",
+    "description": "Generates section container and dummy component",
+    "properties": {
+        "name": {
+            "type": "string",
+            "minLength": 1,
+            "x-prompt": "What is the section name?",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
